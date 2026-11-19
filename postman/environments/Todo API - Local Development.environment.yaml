@@ -1,0 +1,13 @@
+name: Todo API - Local Development
+values:
+  - key: base_url
+    value: ''
+  - key: token
+    secret: true
+  - key: api_key
+    value: ''
+  - key: category_id
+    value: ''
+  - key: todo_id
+    value: ''
+color: 120
