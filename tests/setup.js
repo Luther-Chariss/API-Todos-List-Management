@@ -10,7 +10,7 @@ beforeAll(async () => {
     await mongoose.connect(process.env.MONGODB_TEST_URI, {
         dbName: "db_luthfi_nabil_mutaqin_test"
     });
-
+    
     console.log("Database testing connected!");
 });
 
