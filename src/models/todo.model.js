@@ -33,7 +33,7 @@ const todoSchema = new mongoose.Schema(
         category_id: {
             type: mongoose.Schema.Types.ObjectId,
             ref: "Category",
-            required: true
+            default: null
         },
         created_by: {
             type: mongoose.Schema.Types.ObjectId,

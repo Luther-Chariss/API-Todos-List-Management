@@ -30,6 +30,7 @@ const createTodoValidator = [
         .withMessage("Format tanggal tidak valid"),
 
     body("category_id")
+        .optional()
         .isMongoId()
         .withMessage("ID kategori tidak valid")
 ];

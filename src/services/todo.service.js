@@ -30,15 +30,17 @@ const filterTodoInput = (data) => {
 const createTodo = async (data, userId) => {
     const todoData = filterTodoInput(data);
 
-    // Periksa kategori
-    const category = await Category.findOne({
-        _id: todoData.category_id,
-        user_id: userId,
-        archived: false
-    });
+    // Periksa kategori jika dikirim
+    if (todoData.category_id) {
+        const category = await Category.findOne({
+            _id: todoData.category_id,
+            user_id: userId,
+            archived: false
+        });
 
-    if (!category) {
-        throw new AppError("Kategori tidak ditemukan", 404);
+        if (!category) {
+            throw new AppError("Kategori tidak ditemukan", 404);
+        }
     }
 
     const todo = await Todo.create({
