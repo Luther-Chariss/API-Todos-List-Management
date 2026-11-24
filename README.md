@@ -140,6 +140,17 @@ Sebelum menjalankan project, pastikan perangkat sudah memiliki:
 - MongoDB Atlas atau server MongoDB yang kompatibel.
 - Git.
 
+
+## Live API
+
+Proyek Todo List Management telah berhasil di-deploy menggunakan Vercel.
+
+- **Live API:** https://api-todos-list-management.vercel.app
+- **Swagger Documentation:** https://api-todos-list-management.vercel.app/api-docs/
+
+Dokumentasi Swagger dapat digunakan untuk melihat dan menguji endpoint API secara langsung.
+
+
 ## Instalasi
 
 **1. Clone repository**
