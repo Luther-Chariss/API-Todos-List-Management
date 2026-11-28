@@ -40,7 +40,6 @@ router.use(protect);
  *             type: object
  *             required:
  *               - title
- *               - category_id
  *             properties:
  *               title:
  *                 type: string
@@ -62,7 +61,8 @@ router.use(protect);
  *                 example: "2026-11-20"
  *               category_id:
  *                 type: string
- *                 example: "507f1f77bcf86cd799439011"
+ *                 nullable: true
+ *                 description: ID kategori (opsional). Kosongkan jika Todo tidak menggunakan kategori.
  *     responses:
  *       201:
  *         description: Todo berhasil dibuat
